@@ -22,6 +22,9 @@ imageElement.setAttribute('alt', `Profile image of ${fullName}`);
 
 /* Step 5 - Array */
 let food = ["alfredo", "loaded baked potato", "lasagna" , "ice cream" , "beef stew on rice"];
+const fast = food.push('macaroni');
+console.log(fast);
+console.log(food);
 foodElement.innerHTML += `<br>${food}`;
 food.shift();
 foodElement.innerHTML += `<br>${food}`;

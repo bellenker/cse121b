@@ -11,7 +11,7 @@ let profilePicture = ("images/personalimage.jpg");
 /* Step 3 - Element Variables */
 const nameElement = document.getElementById('name');
 const foodElement = document.getElementById('food');
-const yearElement = document.querySelector("#year");
+const yearElement = document.getElementById('year').textContent;
 const imageElement = document.querySelector("img");
 
 /* Step 4 - Adding Content */

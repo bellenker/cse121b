@@ -51,11 +51,11 @@ img.src="images/personalimage.jpg";
 
 /* Favorite Foods List*/
 
-    myProfile.favoriteFoods.forEach(food => {
-        let li = document.createElement('li');
-        li.textContent = food;
-        document.querySelector('#favorite-foods').appendChild(li);
-    });
+myProfile.favoriteFoods.forEach(food => {
+    let li = document.createElement('li');
+    li.textContent = food;
+    document.querySelector('#favorite-foods').appendChild(li);
+});
 
 /* Hobbies List */
 
@@ -67,17 +67,15 @@ myProfile.hobbies.forEach(hobby => {
 
 /* Places Lived DataList */
 
-myProfile.placesLived.forEach(placesLived => {
-    let dl = document.createElement('dl');
-    dl.textContent = placesLived;
-    document.querySelector('#places-lived').appendChild(dl);
-});
+for(let i=0; i<myProfile.placesLived.length;i++){
+    var place = myProfile.placesLived[i].place;
+    var dt = document.createElement("dt");
+    dt.innerHTML=place;
 
-function placesTemplate() {
-    return '<dt>${place}</dt><dd>${length}</dd>'
-};
+    var length = myProfile.placesLived[i].length;
+    var dd = document.createElement("dd");
+    dd.innerHTML=length;
 
-'#places-lived'.innerHTML = placesLived(
-    myProfile.placesLived,
-    placesTemplate
-);
+    document.getElementById("places-lived").appendChild(dt);
+    document.getElementById("places-lived").appendChild(dd);
+}

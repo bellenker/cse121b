@@ -19,7 +19,7 @@ const displayAnime = (anime) =>{
 };
 
 const getAnime = async() =>{
-    const response = await fetch('https://github.com/bellenker/cse121b/blob/main/anime.json');
+    const response = await fetch('https://run.mocky.io/v3/90442e9a-69fb-4ef7-b895-de9aeadc1b12');
     if (response.ok){
         animeList=await response.json();
     };

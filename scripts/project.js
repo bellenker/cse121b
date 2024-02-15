@@ -95,14 +95,14 @@ const filterAnime = (anime) => {
 
             break;
         
-        case "science_fiction":
-            let animeScience = anime.filter(anime => anime.genre.includes("science fiction"));
+        case "science":
+            let animeScience = anime.filter(anime => anime.genre.includes("science"));
             displayAnime(animeScience);
 
             break;
         
-        case "slice_of_life":
-            let animeSlice = anime.filter(anime => anime.genre.includes("slice of life"));
+        case "slice":
+            let animeSlice = anime.filter(anime => anime.genre.includes("slice"));
             displayAnime(animeSlice);
 
             break;

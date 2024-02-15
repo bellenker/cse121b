@@ -279,6 +279,45 @@ footer {
     margin: .5rem;
 }
 
+#anime {
+    display: grid;
+    grid-gap: .5rem;
+    grid-template-columns:repeat(auto-fit, minmax(500px, 1fr));
+    margin-bottom: 3rem;
+    align-items: center;
+}
+
+#anime article {
+    height: 500px;
+    margin: .5rem;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 1rem;
+    background-color: #afc9f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#anime h4 {
+    color: purple;
+    font-size: smaller;
+}
+
+#anime h3{
+    color:#444;
+}
+#anime p{
+    justify-self: center;
+}
+#anime img {
+    width: 200px;
+    height: auto;
+    margin: .5rem;
+    grid-column: 1/3;
+}
+
+
 /* Media Queries */
 @media only screen and (min-width: 32.5em) {
     nav ul {

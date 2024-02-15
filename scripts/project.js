@@ -94,19 +94,7 @@ const filterAnime = (anime) => {
             displayAnime(animeRomance);
 
             break;
-        
-        case "science":
-            let animeScience = anime.filter(anime => anime.genre.includes("science fiction"));
-            displayAnime(animeScience);
 
-            break;
-        
-        case "slice":
-            let animeSlice = anime.filter(anime => anime.genre.includes("slice of life"));
-            displayAnime(animeSlice);
-
-            break;
-        
         case "supernatural":
             let animeSupernatural = anime.filter(anime => anime.genre.includes("supernatural"));
             displayAnime(animeSupernatural);
